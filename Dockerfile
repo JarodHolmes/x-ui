@@ -1,4 +1,4 @@
-FROM golang:latest AS builder
+FROM golang:bullseye AS builder
 WORKDIR /root
 COPY . .
 RUN go build main.go
